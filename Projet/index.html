@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location de Voitures</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/car-svgrepo-com.svg">
+</head>
+
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <div class="logo">GoMyRent</div>
+        <nav>
+            <ul>
+                <li><a href="index.html"class="navi"><i class="fa-solid fa-house"></i> Accueil</a></li>
+                <li><a href="vehicules.html"class="navi"><i class="fas fa-car"></i>  Nos véhicules</a></li>
+                <li><a href="reservation.html"class="navi"><i class="fa-solid fa-list-check"></i> État des commandes</a></li>
+                <li ><a href="agences.html"class="navi"><i class="fa-solid fa-location-dot"></i> Nos agences</a></li>
+                <li class="cart">🛒 (<span id="compteur">0</span>)</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="bandeau-defilant">
+        <div class="texte-defilant">
+            Bienvenue sur GoMyRent ! Leader de la location de voiture - Profitez de nos offres exclusives sur vos locations de voiture - Suiver nous sur Facebook,Instagram ou X pour profiter pleinement de nos offres !
+        </div>
+    </div>
+    <!-- Pourquoi nous choisir -->
+    <section class="why-choose">
+        <h2>Pourquoi nous choisir ?</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="images/qualite.png" alt="Qualité">
+                <h3>Large choix de véhicules</h3>
+                <p>Des citadines aux SUV, nous avons le véhicule qu'il vous faut.</p>
+            </div>
+            <div class="feature">
+                <img src="images/prix.png" alt="Prix">
+                <h3>Prix imbattables</h3>
+                <p>Des offres compétitives pour toutes les gammes de voitures.</p>
+            </div>
+            <div class="feature">
+                <img src="images/services.jpg" alt="Service">
+                <h3>Assistance 24/7</h3>
+                <p>Une équipe disponible pour vous aider à tout moment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos véhicules -->
+    <section class="cars">
+        <h2>Nos véhicules</h2>
+        <div class="car-list">
+            <div class="car">
+                <img src="images/RENAULT CLIO.png" alt="Renault Clio">
+                <h3> Renault Clio</h3>
+                <p> À partir de 200 DH/jour</p>
+                <a href="vehicules.html#daily" class="btn">Voir plus</a>
+            </div>
+            <div class="car">
+                <img src="images/FORD KUGA.png" alt="Ford Kuga">
+                <h3> Renault Express </h3>
+                <p>À partir de 600 DH/jour</p>
+                <a href="vehicules.html#SUV" class="btn">Voir plus</a>
+            </div>
+            <div class="car">
+                <img src="images/BMW G30.png" alt="BMW G30">
+                <h3> BMW G30 </h3>
+                <p>À partir de 1500 DH/jour</p>
+                <a href="vehicules.html#Luxe" class="btn">Voir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section class="testimonials">
+        <h2>Ce que disent nos clients</h2>
+        <div class="testimonial">
+            <p>"Super service ! Voitures en excellent état et réservation facile."</p>
+            <h4>- Ali</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Prix compétitifs et service client au top, je recommande."</p>
+            <h4>- Mohammed</h4>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer id="contact">
+        <p>&copy; 2025 GoMyRent. Tous droits réservés.</p>
+        <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i> X</a>
+        </div>
+    </footer>
+
+</body>
+</html>

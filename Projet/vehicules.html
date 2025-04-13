@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Véhicules</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/car-svgrepo-com.svg">
+</head>
+<body>
+
+ <!-- En-tête -->
+ <header>
+    <div class="logo">GoMyRent</div>
+    <nav>
+        <ul>
+            <li><a href="index.html"class="navi"><i class="fa-solid fa-house"></i> Accueil</a></li>
+            <li><a href="vehicules.html"class="navi"><i class="fas fa-car"></i>  Nos véhicules</a></li>
+            <li><a href="reservation.html"class="navi"><i class="fa-solid fa-list-check"></i> État des commandes</a></li>
+            <li ><a href="agences.html"class="navi"><i class="fa-solid fa-location-dot"></i> Nos agences</a></li>
+            <li class="cart">🛒 (<span id="compteur">0</span>)</li>
+        </ul>
+    </nav>
+</header>
+<!--<h1>Mes Réservations</h1>
+<p id="compteur"></p>
+<div id="details" class="grid-container"></div>-->
+    <!-- Liste des véhicules -->
+    <section class="cars">
+        <h2>Nos véhicules disponibles</h2>
+        <div class="car-list">
+            <div class="car-type">
+                <h2 id="daily">Catégorie Daily</h2>
+                <div class="car">
+                    <img src="images/RENAULT CLIO.png" alt="RENAULT CLIO">
+                    <div class="car-info" data-nom="RENAULT CLIO" data-prix="200">
+                        <h3>Renault Clio</h3>
+                        <p class="just"><i class="fa-solid fa-gauge"></i> Kilométrage: 50 000 km</p>
+                        <p class="just"><i class="fa-solid fa-money-bills"></i> Prix par jour: 200 DH</p>
+                        <p class="just"><i class="fa-solid fa-calendar"></i>  Année: 2020</p>
+                        <p class="just"><i class="fa-solid fa-car-battery"></i> Options: GPS, Climatisation</p>
+                        <div class="date-picker">
+                            <!--<a href="https://www.renault.ma/modèle/clio" target="_blank" class="just"><i class="fa-brands fa-youtube"></i> Vidéo de présentation</a><br>-->
+                            <label><i class="fas fa-calendar-alt"></i> Date début : <input type="date" class="date-debut"></label><br>
+                            <label><i class="fas fa-calendar-alt"></i> Date fin : <input type="date" class="date-fin"></label><br>
+                        </div>                    
+                        <button class="btn-reserver">Réserver</button><br>
+                        <p class="just"><i class="fas fa-calendar-alt"></i> Dates déjà réservées :</p><br>
+                    </div>
+                </div>
+                <div class="car">
+                    <img src="images/PEUGEOT 208.png" alt="PEUGEOT 208">
+                    <div class="car-info" data-nom="PEUGEOT 208" data-prix="200">
+                        <h3>Peugeot 208</h3>
+                        <p class="just"><i class="fa-solid fa-gauge"></i> Kilométrage: 40 000 km</p>
+                        <p class="just"><i class="fa-solid fa-money-bills"></i> Prix par jour: 200 DH</p>
+                        <p class="just"><i class="fa-solid fa-calendar"></i> Année: 2019</p>
+                        <p class="just"><i class="fa-solid fa-car-battery"></i> Options: Bluetooth, Sièges chauffants</p>
+                        <div class="date-picker">
+                            <!--<a class="just" href="https://www.youtube.com/watch?v=xyz" target="_blank"><i class="fa-brands fa-youtube"></i> Vidéo de présentation</a>
+                            <label><i class="fas fa-calendar-alt"></i> Date début : <input type="date" class="date-debut"></label><br>
+                            <label><i class="fas fa-calendar-alt"></i> Date fin : <input type="date" class="date-fin"></label><br>
+                        </div>
+                        <button class="btn-reserver">Réserver</button><br>
+                        <p class="just"><i class="fas fa-calendar-alt"></i> Dates déjà réservées :</p>
+                    </div>
+                </div>
+                <div class="car">
+                    <img src="images/DACIA STEPWAY.png" alt="DACIA STEPWAY">
+                    <div class="car-info" data-nom="DACIA STEPWAY" data-prix="200">
+                        <h3>Dacia Stepway</h3>
+                        <p class="just"><i class="fa-solid fa-gauge"></i> Kilométrage: 80 000 km</p>
+                        <p class="just"><i class="fa-solid fa-money-bills"></i> Prix par jour: 200 DH</p>
+                        <p class="just"><i class="fa-solid fa-calendar"></i> Année: 2018</p>
+                        <p class="just"><i class="fa-solid fa-car-battery"></i> Options: Radar de recule, Climatisation</p>
+                        <div class="date-picker">
+                            <!--<a class="just" href="https://www.youtube.com/watch?v=xyz" target="_blank"><i class="fa-brands fa-youtube"></i> Vidéo de présentation</a>-->
+                            <label><i class="fas fa-calendar-alt"></i> Date début : <input type="date" class="date-debut"></label><br>
+                            <label><i class="fas fa-calendar-alt"></i> Date fin : <input type="date" class="date-fin"></label><br>
+                        </div>
+                        <button class="btn-reserver">Réserver</button><br>
+                        <p class="just"><i class="fas fa-calendar-alt"></i> Dates déjà réservées :</p>
+                    </div>
+                </div>
+                <div class="car">
+                    <img src="images/TOYOTA YARIS.png" alt="TOYOTA YARIS">
+                    <div class="car-info" data-nom="TOYOTA YARIS" data-prix="200">
+                        <h3>Toyota Yaris</h3>
+                        <p class="just"><i class="fa-solid fa-gauge"></i> Kilométrage: 80 000 km</p>
+                        <p class="just"><i class="fa-solid fa-money-bills"></i> Prix par jour: 200 DH</p>
+                        <p class="just"><i class="fa-solid fa-calendar"></i> Année: 2020</p>
+                        <p class="just"><i class="fa-solid fa-car-battery"></i> Options: Radar de recule, Climatisation</p>
+                        <div class="date-picker">
+                            <!--<a class="just" href="https://www.youtube.com/watch?v=xyz" target="_blank"><i class="fa-brands fa-youtube"></i> Vidéo de présentation</a>-->
+                            <label><i class="fas fa-calendar-alt"></i> Date début : <input type="date" class="date-debut"></label><br>
+                            <label><i class="fas fa-calendar-alt"></i> Date fin : <input type="date" class="date-fin"></label><br>
+                        </div>
+                        <button class="btn-reserver">Réserver</button><br>
+                        <p class="just"><i class="fas fa-calendar-alt"></i> Dates déjà réservées :</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="car-type">
+                <h2 id="Utilitaire">Catégorie Utilitaire</h2>
+                <div class="car">
+                    <img src="images/RENAULT EXPRESSE.png" alt="RENAULT EXPRESS">
+                    <div class="car-info" data-nom="RENAULT EXPRESS" data-prix="350">
+                        <h3>Renault Express</h3>
+                        <p class="just"><i class="fa-solid fa-gauge"></i> Kilométrage: 90 000 km</p>
+                        <p class="just"><i class="fa-solid fa-money-bills"></i> Prix par jour: 200 DH</p>
+                        <p class="just"><i class="fa-solid fa-calendar"></i>  Année: 2019</p>
+                        <p class="just"><i class="fa-solid fa-car-battery"></i> Options: Caméra de recule, Climatisation</p>
+                        <div class="date-picker">
+                            <!--<a href="https://www.youtube.com/watch?v=xyz" target="_blank" class="just"><i class="fa-brands fa-youtube"></i> Vidéo de présentation</a><br>-->
+                            <label><i class="fas fa-calendar-alt"></i> Date début : <input type="date" class="date-debut"></label><br>
+                            <label><i class="fas fa-calendar-alt"></i> Date fin : <input type="date" class="date-fin"></label><br>
+                        </div>                    
+                        <button class="btn-reserver">Réserver</button><br>
+                        <p class="just"><i class="fas fa-calendar-alt"></i> Dates déjà réservées :</p><br>
+                    </div>
+                </div>
+                <div class="car">
+                    <img src="images/DACIA DOCKER.png" alt="DACIA DOCKER">
+                    <div class="car-info" data-nom="DACIA DOCKER" data-prix="300">
+                        <h3>Dacia Doker</h3>
+                        <p class="just"><i class="fa-solid fa-gauge"></i> Kilométrage: 100 000 km</p>
+                        <p class="just"><i class="fa-solid fa-money-bills"></i> Prix par jour: 200 DH</p>
+                        <p class="just"><i class="fa-solid fa-calendar"></i> Année: 2018</p>
+                        <p class="just"><i class="fa-solid fa-car-battery"></i> Options: Radio USB, Climatisation</p>
+                        <div class="date-picker">
+                            <!--<a class="just" href="https://www.youtube.com/watch?v=xyz" target="_blank"><i class="fa-brands fa-youtube"></i> Vidéo de présentation</a>-->
+                            <label><i class="fas fa-calendar-alt"></i> Date début : <input type="date" class="date-debut"></label><br>
+                            <label><i class="fas fa-calendar-alt"></i> Date fin : <input type="date" class="date-fin"></label><br>
+                        </div>
+                        <button class="btn-reserver">Réserver</button><br>
+                        <p class="just"><i class="fas fa-calendar-alt"></i> Dates déjà réservées :</p>
+                    </div>
+                </div>
+            </div>
+            <div class="car-type">
+                <h2 id="Citadines">Catégorie Citadines</h2>
+                    <div class="car">
+                        <img src="images/RENAULT MEGANE.png" alt="RENAULT MEGANE">
+                        <div class="car-info" data-nom="RENAULT MEGANE" data-prix="400">
+                            <h3>Renault Megane</h3>
+                            <p class="just"><i class="fa-solid fa-gauge"></i> Kilométrage: 20 000 km</p>
+                            <p class="just"><i class="fa-solid fa-money-bills"></i> Prix par jour: 400 DH</p>
+                            <p class="just"><i class="fa-solid fa-calendar"></i>  Année: 2021</p>
+                            <p class="just"><i class="fa-solid fa-car-battery"></i> Options: Boite Automatique,caméra de recule, Climatisation</p>
+                            <div class="date-picker">
+                                <!--<a href="https://www.youtube.com/watch?v=xyz" target="_blank" class="just"><i class="fa-brands fa-youtube"></i> Vidéo de présentation</a><br>-->
+                                <label><i class="fas fa-calendar-alt"></i> Date début : <input type="date" class="date-debut"></label><br>
+                                <label><i class="fas fa-calendar-alt"></i> Date fin : <input type="date" class="date-fin"></label><br>
+                            </div>                    
+                            <button class="btn-reserver">Réserver</button><br>
+                            <p class="just"><i class="fas fa-calendar-alt"></i> Dates déjà réservées :</p><br>
+                        </div>
+                    </div>
+                    <div class="car">
+                        <img src="images/OPEL ASTRA.png" alt="OPEL ASTRA">
+                        <div class="car-info" data-nom="OPEL ASTRA" data-prix="300">
+                            <h3>Opel Astra</h3>
+                            <p class="just"><i class="fa-solid fa-gauge"></i> Kilométrage: 80 000 km</p>
+                            <p class="just"><i class="fa-solid fa-money-bills"></i> Prix par jour: 300 DH</p>
+                            <p class="just"><i class="fa-solid fa-calendar"></i> Année: 2023</p>
+                            <p class="just"><i class="fa-solid fa-car-battery"></i> Options: Radar de recule, Climatisation</p>
+                            <div class="date-picker">
+                                <!--<a class="just" href="https://www.youtube.com/watch?v=xyz" target="_blank"><i class="fa-brands fa-youtube"></i> Vidéo de présentation</a>-->
+                                <label><i class="fas fa-calendar-alt"></i> Date début : <input type="date" class="date-debut"></label><br>
+                                <label><i class="fas fa-calendar-alt"></i> Date fin : <input type="date" class="date-fin"></label><br>
+                            </div>
+                            <button class="btn-reserver">Réserver</button><br>
+                            <p class="just"><i class="fas fa-calendar-alt"></i> Dates déjà réservées :</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="car-type">
+                <h2 id="SUV">Catégorie SUV</h2>
+                    <div class="car">
+                        <img src="images/FORD KUGA.png" alt="FORD KUGA">
+                        <div class="car-info" data-nom="FORD KUGA" data-prix="600">
+                            <h3>Ford Kouga</h3>
+                            <p class="just"><i class="fa-solid fa-gauge"></i> Kilométrage: 30 000 km</p>
+                            <p class="just"><i class="fa-solid fa-money-bills"></i> Prix par jour: 600 DH</p>
+                            <p class="just"><i class="fa-solid fa-calendar"></i>  Année: 2022</p>
+                            <p class="just"><i class="fa-solid fa-car-battery"></i> Options: Caméra de recule, Climatisation</p>
+                            <div class="date-picker">
+                                <!--<a href="https://www.youtube.com/watch?v=xyz" target="_blank" class="just"><i class="fa-brands fa-youtube"></i> Vidéo de présentation</a><br>-->
+                                <label><i class="fas fa-calendar-alt"></i> Date début : <input type="date" class="date-debut"></label><br>
+                                <label><i class="fas fa-calendar-alt"></i> Date fin : <input type="date" class="date-fin"></label><br>
+                            </div>                    
+                            <button class="btn-reserver">Réserver</button><br>
+                            <p class="just"><i class="fas fa-calendar-alt"></i> Dates déjà réservées :</p><br>
+                        </div>
+                    </div>
+                    <div class="car">
+                        <img src="images/DACIA DUSTER.png" alt="DACIA DUSTER">
+                        <div class="car-info" data-nom="DACIA DUSTER" data-prix="500">
+                            <h3>Dacia Duster</h3>
+                            <p class="just"><i class="fa-solid fa-gauge"></i> Kilométrage: 40 000 km</p>
+                            <p class="just"><i class="fa-solid fa-money-bills"></i> Prix par jour: 500 DH</p>
+                            <p class="just"><i class="fa-solid fa-calendar"></i> Année: 2023</p>
+                            <p class="just"><i class="fa-solid fa-car-battery"></i> Options: Radio USB, Climatisation</p>
+                            <div class="date-picker">
+                                <!--<a class="just" href="https://www.youtube.com/watch?v=xyz" target="_blank"><i class="fa-brands fa-youtube"></i> Vidéo de présentation</a>-->
+                                <label><i class="fas fa-calendar-alt"></i> Date début : <input type="date" class="date-debut"></label><br>
+                                <label><i class="fas fa-calendar-alt"></i> Date fin : <input type="date" class="date-fin"></label><br>
+                            </div>
+                            <button class="btn-reserver">Réserver</button><br>
+                            <p class="just"><i class="fas fa-calendar-alt"></i> Dates déjà réservées :</p>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="car-type">
+                <h2 id="Luxe">Catégorie Luxe</h2>
+                    <div class="car">
+                        <img src="images/BMW G30.png" alt="BMW G30">
+                        <div class="car-info" data-nom="BMW G30" data-prix="1500">
+                            <h3>BMW G30</h3>
+                            <p class="just"><i class="fa-solid fa-gauge"></i> Kilométrage: 20 000 km</p>
+                            <p class="just"><i class="fa-solid fa-money-bills"></i> Prix par jour: 1500 DH</p>
+                            <p class="just"><i class="fa-solid fa-calendar"></i>  Année: 2023</p>
+                            <p class="just"><i class="fa-solid fa-car-battery"></i> Options: Boite Automatique,Sièges en cuir, Climatisation</p>
+                            <div class="date-picker">
+                                <!--<a href="https://www.youtube.com/watch?v=xyz" target="_blank" class="just"><i class="fa-brands fa-youtube"></i> Vidéo de présentation</a><br>-->
+                                <label><i class="fas fa-calendar-alt"></i> Date début : <input type="date" class="date-debut"></label><br>
+                                <label><i class="fas fa-calendar-alt"></i> Date fin : <input type="date" class="date-fin"></label><br>
+                            </div>                    
+                            <button class="btn-reserver">Réserver</button><br>
+                            <p class="just"><i class="fas fa-calendar-alt"></i> Dates déjà réservées :</p><br>
+                        </div>
+                    </div>
+                    <div class="car">
+                        <img src="images/BMW G11.png" alt="BMW g11">
+                        <div class="car-info" data-nom="BMW G11" data-prix="2000">
+                            <h3>BMW G11</h3>
+                            <p class="just"><i class="fa-solid fa-gauge"></i> Kilométrage: 20 000 km</p>
+                            <p class="just"><i class="fa-solid fa-money-bills"></i> Prix par jour: 2000 DH</p>
+                            <p class="just"><i class="fa-solid fa-calendar"></i> Année: 2018</p>
+                            <p class="just"><i class="fa-solid fa-car-battery"></i> Options: Boite automatique,repose pieds, Climatisation</p>
+                            <div class="date-picker">
+                                <!--<a class="just" href="https://www.youtube.com/watch?v=xyz" target="_blank"><i class="fa-brands fa-youtube"></i> Vidéo de présentation</a>-->
+                                <label><i class="fas fa-calendar-alt"></i> Date début : <input type="date" class="date-debut"></label><br>
+                                <label><i class="fas fa-calendar-alt"></i> Date fin : <input type="date" class="date-fin"></label><br>
+                            </div>
+                            <button class="btn-reserver">Réserver</button><br>
+                            <p class="just"><i class="fas fa-calendar-alt"></i> Dates déjà réservées :</p>
+                        </div>
+                    </div>
+            </div>    
+        </div>
+        
+    </section>
+     <!-- Pied de page -->
+     <footer id="contact">
+        <p>&copy; 2025 GoMyRent. Tous droits réservés.</p>
+        <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i> X</a>
+        </div>
+    </footer>
+</body>
+</html>

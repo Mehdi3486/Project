@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Réservations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/car-svgrepo-com.svg">
+</head>
+<body class="page-container">
+     <!-- En-tête -->
+ <header>
+    <div class="logo">GoMyRent</div>
+    <nav>
+        <ul>
+            <li><a href="index.html"class="navi"><i class="fa-solid fa-house"></i> Accueil</a></li>
+            <li><a href="vehicules.html"class="navi"><i class="fas fa-car"></i>  Nos véhicules</a></li>
+            <li><a href="reservation.html"class="navi"><i class="fa-solid fa-list-check"></i> État des commandes</a></li>
+            <li ><a href="agences.html"class="navi"><i class="fa-solid fa-location-dot"></i> Nos agences</a></li>
+            <li class="cart">🛒 (<span id="compteur">0</span>)</li>
+        </ul>
+    </nav>
+</header>
+    <h1 class="decaler">Mes Réservations</h1>
+    <div id="details" class="grid-container"></div>
+    <button id="finaliser">Finaliser la commande</button>
+
+    <!-- Pop-up de finalisation -->
+    <div id="popup" class="popup" style="display: none;">
+        <h2>Informations de Contact</h2>
+        <label>Nom: <input type="text" id="nom"></label><br>
+        <label>Prénom: <input type="text" id="prenom"></label><br>
+        <label>Téléphone: <input type="text" id="telephone"></label><br>
+        <label>Email: <input type="email" id="email"></label><br>
+        <label>Adresse: <input type="text" id="adresse"></label><br>
+        <button id="confirmer"><i class="fa-solid fa-square-check"></i> Confirmer</button>
+        <button id="annuler"><i class="fa-solid fa-rectangle-xmark"></i> Annuler</button>
+    </div>
+
+    
+     <!-- Pied de page -->
+    <footer id="contact">
+        <p>&copy; 2025 GoMyRent. Tous droits réservés.</p>
+        <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i> X</a>
+        </div>
+    </footer>
+</body>
+</html>
